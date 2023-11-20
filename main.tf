@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "remote" {
-    organization = "Hoonartek"
+    organization = "my-organization-name"
 
     workspaces {
       name = "gh-actions-demo"
@@ -16,11 +16,6 @@ terraform {
 }
 
 provider "snowflake" {
-  account  = "https://av74281.central-india.azure.snowflakecomputing.com"
-  username = "YASHGAJBHIYE"
-  password = "HTEK@#1193"
-  role     = "ACCOUNTADMIN"
-  warehouse = "COMPUTE_WH"
 }
 
 resource "snowflake_database" "demo_db" {
