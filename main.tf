@@ -16,8 +16,8 @@ terraform {
 }
 
 provider "snowflake" {
-}
 
+}
 
 resource "snowflake_database" "demo_db" {
   name    = "DEMO_DB"
