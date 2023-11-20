@@ -16,6 +16,11 @@ terraform {
 }
 
 provider "snowflake" {
+  account  = "https://av74281.central-india.azure.snowflakecomputing.com"
+  username = "YASHGAJBHIYE"
+  password = "HTEK@#1193"
+  role     = "ACCOUNTADMIN"
+  warehouse = "COMPUTE_WH"
 }
 
 resource "snowflake_database" "demo_db" {
